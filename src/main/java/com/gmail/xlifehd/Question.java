@@ -15,14 +15,14 @@ public class Question {
         this.id = id;
     }
 
-    public Question randomQuestion() {
-
+    public static Question randomQuestion() {
+        //TODO: Get random Question from Database
 
 
         return null;
     }
 
-    private String[] convertAnswersString(String answers) {
+    private static String[] convertAnswersString(String answers) {
         //TODO: Implement convertAnswersString()
         return null;
     }
@@ -32,6 +32,19 @@ public class Question {
         return false;
     }
 
+    public int getPoints() {
+        return points;
+    }
 
+    public String getQuestion() {
+        return question;
+    }
 
+    public String getCategory() {
+        return category;
+    }
+
+    public int getId() {
+        return id;
+    }
 }
